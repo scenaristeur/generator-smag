@@ -1,27 +1,37 @@
 # generator-smag
-generator for smag for Solid webapps, using lit-element, evejs
+generator-smag for Solid webapps, provide :
+- lit-element (webcomponents),
+- evejs (communication between webcomponents)
+- solid-auth-client (login to Solid)
 
 # install
 - prerequis : nodejs LTS, npm
-- in case of EACCES error change permission on /usr/local/lib/node_modules : https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally or  https://flaviocopes.com/npm-fix-missing-write-access-error/)
+- in case of EACCES error change permission on /usr/local/lib/node_modules or other : https://flaviocopes.com/npm-fix-missing-write-access-error/ or see https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
 ```
 # change permission
+sudo chown -R $USER {path}
+#example
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
 
 - install 'yo' globally (npm install -g yo)
-- create a directory for your 'my-app' & cd in (mkdir my-app && cd my-app)
+- create a directory for your 'cool-app' & cd in (mkdir cool-app && cd cool-app)
 - install globally 'generator-smag' (npm install -g generator-smag)
 - generate 'smag' (yo smag)
+- run the dev server (npm run dev)
+- You should then see your favorite browser open on http://localhost:9000 and use your app
+
+one line :
+```
+npm install -g yo && mkdir cool-app && cd cool-app && npm install -g generator-smag && yo smag && npm run dev
+```
+or progressively :
 ```
 npm install -g yo
-mkdir my-app && cd my-app
+mkdir cool-app && cd cool-app
 npm install -g generator-smag
 yo smag
-```
-- run the dev server
-```
 npm run dev
 ```
 - prod
@@ -55,6 +65,9 @@ git push
 git subtree push --prefix dist origin gh-pages
 
 
+-----------------------------
+# just for me
+npm publish --access public
 
 # debug
 https://yeoman.io/authoring/debugging.html
