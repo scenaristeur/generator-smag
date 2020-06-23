@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/scenaristeur/generator-smag/issues"
   },
-  "homepage": "https://github.com/scenaristeur/generator-smag#readme"
+  "homepage": "https://github.com/scenaristeur/generator-smag#readme",
+  "dependencies": {
+    "yeoman-generator": "^4.10.1"
+  }
 }
