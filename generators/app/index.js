@@ -59,8 +59,8 @@ this.fs.extendJSON(this.destinationPath('package.json'), pkgJson);
 
 
 }
-async end(){
-  await this.fs.copyTpl(
+end(){
+  this.fs.copyTpl(
     //this.cp -r node_modules/solid-auth-client/dist-popup/ dist
     this.destinationPath('node_modules/solid-auth-client/dist-popup/'),
     this.destinationPath('dist/dist-popup/'),

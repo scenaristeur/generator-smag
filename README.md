@@ -2,6 +2,10 @@
 generator for smag for Solid webapps, using lit-element, evejs
 
 # install
+( in case of EACCES error , https://flaviocopes.com/npm-fix-missing-write-access-error/)
+  ```
+sudo chown -R $USER /usr/local/lib/node_modules
+  ```
 - prérequis : nodejs LTS, npm
 - install yo
 ```
