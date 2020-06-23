@@ -3,6 +3,7 @@ generator-smag for Solid webapps, provide :
 - lit-element (webcomponents),
 - evejs (communication between webcomponents)
 - solid-auth-client (login to Solid)
+- example : [https://scenaristeur.github.io/socialid-template/](https://scenaristeur.github.io/socialid-template/)
 
 # prerequis
 - nodejs LTS, npm
@@ -26,6 +27,7 @@ sudo chown -R $USER /usr/local/lib/node_modules
 one line :
 ```
 npm install -g yo && mkdir cool-app && cd cool-app && npm install -g generator-smag && yo smag && npm run dev
+
 ```
 or progressively :
 ```
@@ -34,11 +36,16 @@ mkdir cool-app && cd cool-app
 npm install -g generator-smag
 yo smag
 npm run dev
+
 ```
+
 - prod
+
 ```
 npm run build
+
 ```
+
 
 # make a gh-pages branches & publish to gh-pages
 https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages
