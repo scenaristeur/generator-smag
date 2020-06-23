@@ -1,5 +1,5 @@
 {
-  "name": "generator-smag",
+  "name": "@smag0/generator-smag",
   "version": "1.0.0",
   "description": "generator for smag Solid webapps",
   "main": "index.js",
