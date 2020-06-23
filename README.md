@@ -2,7 +2,7 @@
 generator for smag for Solid webapps, using lit-element, evejs
 
 # install
-- install nodejs LTS
+- prérequis : nodejs LTS, npm
 - install yo
 ```
 npm install -g yo
@@ -11,6 +11,7 @@ npm install -g yo
 ```
 mkdir my-app
 cd my-app
+npm install -g generator-smag
 yo smag
 ```
 - run the dev server
