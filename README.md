@@ -2,19 +2,21 @@
 generator for smag for Solid webapps, using lit-element, evejs
 
 # install
-( in case of EACCES error , https://flaviocopes.com/npm-fix-missing-write-access-error/)
-  ```
+- prerequis : nodejs LTS, npm
+- in case of EACCES error change permission on /usr/local/lib/node_modules : https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally or  https://flaviocopes.com/npm-fix-missing-write-access-error/)
+
+```
+# change permission
 sudo chown -R $USER /usr/local/lib/node_modules
-  ```
-- prérequis : nodejs LTS, npm
-- install yo
+```
+
+- install 'yo' globally (npm install -g yo)
+- create a directory for your 'my-app' & cd in (mkdir my-app && cd my-app)
+- install globally 'generator-smag' (npm install -g generator-smag)
+- generate 'smag' (yo smag)
 ```
 npm install -g yo
-```
-- download the generator
-```
-mkdir my-app
-cd my-app
+mkdir my-app && cd my-app
 npm install -g generator-smag
 yo smag
 ```
