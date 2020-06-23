@@ -20,31 +20,37 @@ module.exports = class extends Generator {
 
 writing() {
   this.fs.copyTpl(
-    this.templatePath('dist/index.html'),
-    this.destinationPath('dist/index.html'),
-    { title: 'Index in dist' }
+    this.templatePath(),
+    this.destinationPath(),
+    { title: 'copy all files' }
   );
-
+  /*
   this.fs.copyTpl(
-    this.templatePath('webpack.config.js'),
-    this.destinationPath('webpack.config.js'),
-    { title: 'Webpack config' }
-  );
+  this.templatePath('dist/index.html'),
+  this.destinationPath('dist/index.html'),
+  { title: 'Index in dist' }
+);
 
-  this.fs.copyTpl(
-    this.templatePath('src/'),
-    this.destinationPath('src/'),
-    { title: 'Firsts components' }
-  );
+this.fs.copyTpl(
+this.templatePath('webpack.config.js'),
+this.destinationPath('webpack.config.js'),
+{ title: 'Webpack config' }
+);
+
+this.fs.copyTpl(
+this.templatePath('src/'),
+this.destinationPath('src/'),
+{ title: 'Firsts components' }
+);*/
 
 
 
-  const pkgJson = {
-    /*  devDependencies: {
-    eslint: '^3.15.0'
-  },
-  dependencies: {
-  react: '^16.2.0'
+const pkgJson = {
+  /*  devDependencies: {
+  eslint: '^3.15.0'
+},
+dependencies: {
+react: '^16.2.0'
 },*/
 scripts: {
   test: "echo \"Error: no test specified\" && exit 1",
