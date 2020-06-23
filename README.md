@@ -7,7 +7,7 @@ generator-smag for Solid webapps, provide :
 
 # prerequis
 - nodejs LTS, npm
-- in case of EACCES error change permission on /usr/local/lib/node_modules or other : https://flaviocopes.com/npm-fix-missing-write-access-error/ or see https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+- in case of EACCES error change permission on /usr/local/lib/node_modules or other : [https://flaviocopes.com/npm-fix-missing-write-access-error/] or see (https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
 
 ```
 # change permission
