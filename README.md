@@ -4,8 +4,8 @@ generator-smag for Solid webapps, provide :
 - evejs (communication between webcomponents)
 - solid-auth-client (login to Solid)
 
-# install
-- prerequis : nodejs LTS, npm
+# prerequis
+- nodejs LTS, npm
 - in case of EACCES error change permission on /usr/local/lib/node_modules or other : https://flaviocopes.com/npm-fix-missing-write-access-error/ or see https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
 ```
@@ -15,6 +15,7 @@ sudo chown -R $USER {path}
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
 
+# install
 - install 'yo' globally (npm install -g yo)
 - create a directory for your 'cool-app' & cd in (mkdir cool-app && cd cool-app)
 - install globally 'generator-smag' (npm install -g generator-smag)
